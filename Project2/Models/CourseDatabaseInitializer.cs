@@ -75,7 +75,7 @@ namespace Project2.Models
                         CourseID = 1,
                         CourseName = "Physics",
                         CourseDescription = "blalallasllsdsdf asdfbasjkdf  asdasdasd",
-                        CourseTeacher = "Saleh Ayobi",
+                   
                         CourseYear = 1
                    },
                    new Course
@@ -83,7 +83,7 @@ namespace Project2.Models
                         CourseID = 2,
                         CourseName = "Algebra",
                         CourseDescription = "blalallasllsdsdf asdfbasjkdf  asdasdasd",
-                        CourseTeacher = "Asmahan Khadoor",
+             
                         CourseYear = 1
                    },
                    new Course
@@ -91,7 +91,6 @@ namespace Project2.Models
                         CourseID = 3,
                         CourseName = "Programming 1",
                         CourseDescription = "blalallasllsdsdf asdfbasjkdf  asdasdasd",
-                        CourseTeacher = "Rakan Razook",
                         CourseYear = 1
                    },
                    new Course
@@ -99,7 +98,6 @@ namespace Project2.Models
                         CourseID = 4,
                         CourseName = "Analysis 1",
                         CourseDescription = "blalallasllsdsdf asdfbasjkdf  asdasdasd",
-                        CourseTeacher = "Huda Habash",
                         CourseYear = 1
                    },
                    new Course
@@ -107,7 +105,6 @@ namespace Project2.Models
                        CourseID = 5,
                        CourseName = "Communication Skills",
                        CourseDescription = "jbt fia 60 ya 3rsat",
-                       CourseTeacher = "Ezmeralda Tiz",
                        CourseYear = 1
                    },
                    new Course
@@ -115,7 +112,6 @@ namespace Project2.Models
                        CourseID = 6,
                        CourseName = "Compiler",
                        CourseDescription = "Weli l Polymorphism",
-                       CourseTeacher = "Nadeem Hajouj",
                        CourseYear = 4
                    }
                 };

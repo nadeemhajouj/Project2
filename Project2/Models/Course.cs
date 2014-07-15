@@ -8,14 +8,18 @@ namespace Project2.Models
 {
     public class Course
     {
+
+        public Course()
+        {
+            this.Students = new HashSet<Student>();
+            this.Teachers = new HashSet<Teacher>();
+        }
+
         [ScaffoldColumn(false)]
         public int CourseID { get; set; }
 
         [Required, Display(Name = "Course Year")]
         public int CourseYear { get; set; }
-
-        [StringLength(20), Display(Name = "Course Teacher")]
-        public string CourseTeacher { get; set; }
 
         [Required, StringLength(50), Display(Name = "Course Name")]
         public string CourseName { get; set; }
@@ -25,6 +29,10 @@ namespace Project2.Models
 
         public string CourseDepartement { get; set; }
 
-        public virtual ICollection<Advertisement> Advertisements { get; set; } 
+        public int CourseSemester { get; set; }
+
+        public virtual ICollection<Student> Students { get; set; }
+
+        public virtual ICollection<Teacher> Teachers { get; set; }
     }
 }
