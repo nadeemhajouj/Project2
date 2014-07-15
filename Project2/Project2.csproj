@@ -315,14 +315,24 @@
     </Compile>
     <Compile Include="Logic\AddCourses.cs" />
     <Compile Include="Logic\RoleActions.cs" />
+    <Compile Include="Models\ACMProblem.cs" />
     <Compile Include="Models\Advertisement.cs" />
+    <Compile Include="Models\Comment.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\CourseContext.cs" />
     <Compile Include="Models\CourseDatabaseInitializer.cs" />
+    <Compile Include="Models\Homework.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Message.cs" />
+    <Compile Include="Models\Notification.cs" />
+    <Compile Include="Models\Post.cs" />
+    <Compile Include="Models\ProbStd.cs" />
     <Compile Include="Models\Project.cs" />
+    <Compile Include="Models\Question.cs" />
+    <Compile Include="Models\StdCourse.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Teacher.cs" />
+    <Compile Include="Models\Team.cs" />
     <Compile Include="Projects.aspx.cs">
       <DependentUpon>Projects.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

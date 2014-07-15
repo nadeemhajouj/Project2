@@ -51,16 +51,16 @@ namespace Project2.Models
                 {
                     ProjectID = 1,
                     ProjectName = "Peer to Peer Evaluation System",
-                    ProjectDescription = "blballallalalblbllbblbasdjksad asjdbasjdbajsbdjabsd",
-                    ProjectYear = 1,
+                    //ProjectDescription = "blballallalalblbllbblbasdjksad asjdbasjdbajsbdjabsd",
+                    //ProjectYear = 1,
                     ImagePath = "img/Cancer.jpg"
                 },
                 new Project
                 {
                     ProjectID = 2,
                     ProjectName = "Automatic Archving for Documents in ITE",
-                    ProjectDescription = "blballallalalblbllbblbasdjksad asjdbasjdbajsbdjabsd",
-                    ProjectYear = 1,
+                    //ProjectDescription = "blballallalalblbllbblbasdjksad asjdbasjdbajsbdjabsd",
+                    //ProjectYear = 1,
                     ImagePath = "img/Cancer.jpg"
                 }
             };

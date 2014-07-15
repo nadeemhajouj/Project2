@@ -28,7 +28,7 @@ namespace Project2.Models
 
         public int? CourseID { get; set; }
 
-        public virtual Course Course { get; set; }
+        public string Author { get; set; }
 
     }
 }

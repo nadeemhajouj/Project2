@@ -11,8 +11,11 @@ namespace Project2.Models
 
         public Course()
         {
-            this.Students = new HashSet<Student>();
             this.Teachers = new HashSet<Teacher>();
+            this.Homeworks = new HashSet<Homework>();
+            this.Advertisements = new HashSet<Advertisement>();
+            this.StdCourses = new HashSet<StdCourse>();
+            this.Questions = new HashSet<Question>();
         }
 
         [ScaffoldColumn(false)]
@@ -29,10 +32,17 @@ namespace Project2.Models
 
         public string CourseDepartement { get; set; }
 
-        public int CourseSemester { get; set; }
-
-        public virtual ICollection<Student> Students { get; set; }
+        public bool CourseSemester { get; set; }
 
         public virtual ICollection<Teacher> Teachers { get; set; }
+
+        public virtual ICollection<Advertisement> Advertisements { get; set; }
+
+        public virtual ICollection<Homework> Homeworks { get; set; }
+
+        public virtual ICollection<StdCourse> StdCourses { get; set; }
+
+        public virtual ICollection<Question> Questions { get; set; }
+
     }
 }
