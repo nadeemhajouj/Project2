@@ -9,6 +9,13 @@ namespace Project2.Models
 {
     public class Project
     {
+
+
+        public Project()
+        {
+            this.Teachers = new HashSet<Teacher>();
+        }
+
         [ScaffoldColumn(false)]
         public int ProjectID { get; set; }
 
@@ -16,12 +23,18 @@ namespace Project2.Models
         public string ProjectName { get; set; }
 
         [Required, StringLength(1000), Display(Name = "Project Description"), DataType(DataType.MultilineText)]
-        public string ProjectDescription { get; set; }
+        public string ProjectAbstract { get; set; }
 
-        [Required, Display(Name = "Project Year")]
-        public int ProjectYear { get; set; }
+        [Required, DataType(DataType.DateTime)]
+        public DataType Date { get; set; }
 
         public string ImagePath { get; set; }
+
+        public int HomId { get; set; }
+
+        public int TeamId { get; set; }
+
+        public virtual ICollection<Teacher> Teachers { get; set; }
 
     }
 }

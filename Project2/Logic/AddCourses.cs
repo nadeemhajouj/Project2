@@ -13,7 +13,7 @@ namespace Project2.Logic
             var myCourse = new Course();
             myCourse.CourseName = CourseName;
             myCourse.CourseDescription = CourseDesc;
-            
+     // alu       
             myCourse.CourseYear = int.Parse(CourseYear);
             myCourse.CourseDepartement = CourseDep;
 
