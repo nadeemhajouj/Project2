@@ -3,10 +3,15 @@
 
     <div class="container">
         
-        <h2>
-            <asp:Literal ID="txtHeader" runat="server"></asp:Literal>
-        </h2>
+        
+                    <h2 class="col-md-2">
+                        <asp:Literal ID="txtHeader" runat="server"></asp:Literal>
+                    </h2>
+             
+                    <asp:Button runat="server" ID="FollowButton" CssClass="btn btn-info col-md-offset-11" Text="Follow Course" OnClick="FollowButton_OnClick"> </asp:Button>
                 
+
+     
                 <div>
                     <ol class="breadcrumb">
                         <li>Courses</li>

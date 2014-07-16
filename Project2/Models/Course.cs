@@ -31,6 +31,8 @@ namespace Project2.Models
 
         public int CourseSemester { get; set; }
 
+        public int TeacherId { get; set; }
+
         public virtual ICollection<Student> Students { get; set; }
 
         public virtual ICollection<Teacher> Teachers { get; set; }

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Microsoft.AspNet.Identity;
+using Project2.Models;
 
 namespace Project2
 {
@@ -37,6 +39,31 @@ namespace Project2
             /*string txt = (string)(Session["name"]);
             txtcourse.Text = txt;
             courseName.Text = txt;*/
+        }
+
+        protected void FollowButton_OnClick(object sender, EventArgs e)
+        {
+            CourseContext cc = new CourseContext();
+
+            string userId = Context.User.Identity.GetUserId();
+
+            var query = from s in cc.Students
+                where s.UserId == userId
+                select s;
+
+            var query2 = from c in cc.Courses
+                where c.CourseName == courseName.Text
+                select c;
+
+            foreach (var std in query)
+            {
+                foreach (var cou in query2)
+                {
+                    std.Courses.Add(cou);   
+                }
+            }
+
+            cc.SaveChanges();
         }
     }
 }

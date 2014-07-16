@@ -161,6 +161,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="CourseInfo.aspx" />
     <Content Include="Courses.aspx" />
+    <Content Include="fonts\flexslider-icon.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="img\1.jpg" />
     <Content Include="img\2.jpg" />
@@ -172,6 +173,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <Content Include="Admin\Web.config" />
+    <Content Include="fonts\flexslider-icon.eot" />
+    <Content Include="fonts\flexslider-icon.ttf" />
+    <Content Include="fonts\flexslider-icon.woff" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Projects.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -315,6 +319,15 @@
     </Compile>
     <Compile Include="Logic\AddCourses.cs" />
     <Compile Include="Logic\RoleActions.cs" />
+    <Compile Include="Migrations\201407152117575_InitialCreate.cs" />
+    <Compile Include="Migrations\201407152117575_InitialCreate.Designer.cs">
+      <DependentUpon>201407152117575_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201407152209358_t.cs" />
+    <Compile Include="Migrations\201407152209358_t.Designer.cs">
+      <DependentUpon>201407152209358_t.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Advertisement.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\CourseContext.cs" />
@@ -356,6 +369,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201407152117575_InitialCreate.resx">
+      <DependentUpon>201407152117575_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201407152209358_t.resx">
+      <DependentUpon>201407152209358_t.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

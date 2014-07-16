@@ -14,8 +14,29 @@ namespace Project2.Models
             GetCourses().ForEach(c => context.Courses.Add(c));
             GetProjects().ForEach(p => context.Projects.Add(p));
             GetAdvertisements().ForEach(a => context.Advertisements.Add(a));
+            GetTeachers().ForEach(t => context.Teachers.Add(t));
         }
 
+
+        private static List<Teacher> GetTeachers()
+        {
+            var Teachers = new List<Teacher>
+            {
+                new Teacher
+                {
+                    TeacherId = 1,
+                    FirstName = "Basem",
+                    LastName = "Kusaibeh",
+                },
+                new Teacher
+                {
+                    TeacherId = 2,
+                    FirstName = "Ahmad",
+                    LastName = "Mohammad"
+                }
+            };
+            return Teachers;
+        }
 
         private static List<Advertisement> GetAdvertisements()
         {
@@ -75,7 +96,7 @@ namespace Project2.Models
                         CourseID = 1,
                         CourseName = "Physics",
                         CourseDescription = "blalallasllsdsdf asdfbasjkdf  asdasdasd",
-                   
+                        TeacherId = 1,
                         CourseYear = 1
                    },
                    new Course
@@ -83,7 +104,7 @@ namespace Project2.Models
                         CourseID = 2,
                         CourseName = "Algebra",
                         CourseDescription = "blalallasllsdsdf asdfbasjkdf  asdasdasd",
-             
+                        TeacherId = 1,
                         CourseYear = 1
                    },
                    new Course
@@ -91,6 +112,7 @@ namespace Project2.Models
                         CourseID = 3,
                         CourseName = "Programming 1",
                         CourseDescription = "blalallasllsdsdf asdfbasjkdf  asdasdasd",
+                        TeacherId = 2,
                         CourseYear = 1
                    },
                    new Course
@@ -98,6 +120,7 @@ namespace Project2.Models
                         CourseID = 4,
                         CourseName = "Analysis 1",
                         CourseDescription = "blalallasllsdsdf asdfbasjkdf  asdasdasd",
+                        TeacherId = 2,
                         CourseYear = 1
                    },
                    new Course
@@ -105,6 +128,7 @@ namespace Project2.Models
                        CourseID = 5,
                        CourseName = "Communication Skills",
                        CourseDescription = "jbt fia 60 ya 3rsat",
+                       TeacherId = 2,
                        CourseYear = 1
                    },
                    new Course
@@ -112,6 +136,7 @@ namespace Project2.Models
                        CourseID = 6,
                        CourseName = "Compiler",
                        CourseDescription = "Weli l Polymorphism",
+                       TeacherId = 1,
                        CourseYear = 4
                    }
                 };
